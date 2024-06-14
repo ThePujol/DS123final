@@ -1,4 +1,4 @@
-@startuml
+@startuml "@Atividades"
 start
 :Selecionar "Iniciar Prova";
 :Carregar Questões Aleatórias;

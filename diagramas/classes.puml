@@ -1,4 +1,4 @@
-@startuml
+@startuml "@Classes"
 class Questao {
     -String banca
     -String concurso

@@ -1,4 +1,4 @@
-@startuml
+@startuml "@CasoDeUso"
 actor "Candidato" as C
 
 usecase "Iniciar Prova" as UP
