@@ -1,0 +1,29 @@
+@startuml
+[*] --> Menu
+Menu : Exibir Menu Principal
+
+Menu --> Prova : Selecionar "Iniciar Prova"
+Prova : Iniciar Prova
+Prova --> Questao : Selecionar Questão Aleatória
+Questao : Exibir Questão
+
+Questao --> Prova : Receber Resposta
+Prova : Verificar Resposta
+
+Prova --> Gabarito : Finalizar Prova
+Gabarito : Exibir Gabarito e Resultado
+
+Gabarito --> Menu : Retornar ao Menu
+
+Menu --> Ranking : Selecionar "Ver Ranking"
+Ranking : Exibir Ranking
+
+Ranking --> Menu : Retornar ao Menu
+
+Menu --> Ajuda : Selecionar "Mostrar Ajuda"
+Ajuda : Exibir Ajuda
+
+Ajuda --> Menu : Retornar ao Menu
+
+[*] --> Menu
+@enduml

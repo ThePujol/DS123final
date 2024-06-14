@@ -1,0 +1,15 @@
+@startuml
+actor "Candidato" as C
+
+usecase "Iniciar Prova" as UP
+usecase "Ver Ranking" as VR
+usecase "Responder Questões Aleatórias" as RQA
+usecase "Visualizar Gabarito" as VG
+usecase "Mostrar Ajuda" as MA
+
+C -- UP
+C -- VR
+C -- RQA
+C -- VG : <<extends>> UP
+C -- MA
+@enduml

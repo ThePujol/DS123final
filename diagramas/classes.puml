@@ -1,0 +1,28 @@
+@startuml
+class Questao {
+    -String banca
+    -String concurso
+    -String topico
+    -String tema
+    -String enunciado
+    -char resposta
+}
+
+class Usuario {
+    -String nome
+    -int pontuacao
+    -int tempo
+    -time_t data_prova
+}
+
+class Sistema {
+    +void iniciarProva()
+    +void verRanking()
+    +void responderQuestoesAleatorias()
+    +void mostrarAjuda()
+    +int lerQuestoes(String filename)
+}
+
+Sistema --> Questao
+Sistema --> Usuario
+@enduml

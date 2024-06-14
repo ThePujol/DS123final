@@ -1,0 +1,15 @@
+@startuml
+start
+:Selecionar "Iniciar Prova";
+:Carregar Questões Aleatórias;
+repeat
+    :Exibir Questão;
+    :Receber Resposta;
+    if (Resposta Correta?) then (sim)
+        :Incrementar Pontuação;
+    endif
+repeat while (Questões Restantes?)
+:Calcular Pontuação Final;
+:Exibir Gabarito e Resultado;
+stop
+@enduml
