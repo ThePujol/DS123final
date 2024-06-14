@@ -57,16 +57,16 @@ O sistema segue uma arquitetura monolítica e é dividido em várias funções p
 ## 📊 Diagramas
 
 ### 🎨 Diagrama de Caso de Uso
-![image] (diagramas/Caso de uso.png)
+<img src="./diagramas/Caso de uso.png"> 
 
 ### 🏷 Diagrama de Classes
-![image] (diagramas/Classes.png)
+<img src="./diagramas/Classes.png">
 
 ### 🛠 Diagrama de Atividades
-![image] (diagramas/atividades.png)
+<img src="./diagramas/atividades.png">
 
 ### 📈 Diagrama de Estado
-![image] (diagramas/Estado.png)
+<img src="./diagramas/Estado.png>
 
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções de bugs ou novas funcionalidades.
