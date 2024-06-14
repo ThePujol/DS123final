@@ -1,0 +1,17 @@
+@startuml "@Arquitetura"
+package "Simulador de Provas" {
+    [Interface Usuário]
+    [Interface Banco de Dados]
+    [Interface Sistema Operacional]
+    [Lógica de Negócio]
+    [Persistência]
+    [Interface Gráfica]
+
+    [Aplicação] --> [Interface Usuário]
+    [Aplicação] --> [Interface Banco de Dados]
+    [Aplicação] --> [Interface Sistema Operacional]
+    [Aplicação] --> [Lógica de Negócio]
+    [Lógica de Negócio] --> [Persistência]
+    [Aplicação] --> [Interface Gráfica]
+}
+@enduml

@@ -1,0 +1,18 @@
+@startuml "@Casode Uso"
+left to right direction
+actor Usuario as user
+rectangle "Simulador de Provas" {
+    usecase (Iniciar Prova) as iniciar
+    usecase (Ver Ranking) as ranking
+    usecase (Responder Questões Aleatórias) as responder
+    usecase (Ajuda) as ajuda
+    usecase (Sair) as sair
+
+    user --> iniciar
+    user --> ranking
+    user --> responder
+    user --> ajuda
+    user --> sair
+}
+@enduml 
+
