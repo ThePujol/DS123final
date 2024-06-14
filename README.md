@@ -66,7 +66,7 @@ O sistema segue uma arquitetura monolítica e é dividido em várias funções p
 <img src="./diagramas/atividades.png">
 
 ### 📈 Diagrama de Estado
-<img src="./diagramas/Estado.png>
+<img src="./diagramas/Estado.png">
 
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções de bugs ou novas funcionalidades.
