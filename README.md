@@ -1,112 +1,74 @@
-# DS123
-Trabalho final da disciplia DS123 da UFPR em 2024
+# Trabalho final TADS - DS123 - Linguagem de Programação
+# 📚 Simulador de Provas de Concurso Público
 
-# Documentação Técnica: Simulador de Prova para Concursos em C
+## 📑 Índice
+- [Trabalho final TADS - DS123 - Linguagem de Programação](#trabalho-final-tads---ds123---linguagem-de-programação)
+- [📚 Simulador de Provas de Concurso Público](#-simulador-de-provas-de-concurso-público)
+  - [📑 Índice](#-índice)
+  - [📜 Descrição](#-descrição)
+  - [✨ Funcionalidades](#-funcionalidades)
+  - [🔧 Requisitos](#-requisitos)
+  - [⚙️ Instalação](#️-instalação)
+  - [🚀 Uso](#-uso)
+  - [🏗 Arquitetura do Sistema](#-arquitetura-do-sistema)
+  - [📊 Diagramas](#-diagramas)
+    - [🎨 Diagrama de Caso de Uso](#-diagrama-de-caso-de-uso)
+    - [🏷 Diagrama de Classes](#-diagrama-de-classes)
+    - [🛠 Diagrama de Atividades](#-diagrama-de-atividades)
+    - [📈 Diagrama de Estado](#-diagrama-de-estado)
+  - [🤝 Contribuição](#-contribuição)
 
-## Introdução
+## 📜 Descrição
+O **Simulador de Provas** é uma ferramenta desenvolvida em linguagem C para ajudar candidatos a concursos públicos a praticar questões de provas de diversas áreas. O sistema permite que os usuários realizem provas simuladas, vejam seu desempenho e consultem rankings.
 
-Este documento descreve o simulador de prova para concursos desenvolvido em linguagem C, que roda em terminal. O software permite aos usuários realizar uma simulação de prova com questões aleatórias selecionadas a partir de um banco de dados de questões.
+## ✨ Funcionalidades
+- 📝 Iniciar uma prova simulada com questões aleatórias.
+- ✅ Responder questões e receber feedback imediato.
+- 📊 Exibir a pontuação final e o gabarito ao final da prova.
+- 🏆 Consultar ranking dos melhores desempenhos.
+- 🔄 Responder questões aleatórias sem limite de tempo.
+- 🆘 Exibir ajuda e instruções detalhadas.
 
-## Visão Geral do Sistema
+## 🔧 Requisitos
+- 🖥 Compilador C (como GCC).
+- 💻 Terminal para execução do programa.
+- 📂 Arquivo de questões formatadas.
 
-### Descrição Geral
+## ⚙️ Instalação
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/simulador-de-provas.git
+    ```
+2. Compile o código:
+    ```bash
+    gcc simulador_provas.c -o simulador_provas
+    ```
 
-O simulador de prova para concursos é um programa de linha de comando que oferece a experiência de resolver questões simuladas de diferentes temas. Após a conclusão da prova, o programa exibe um ranking com base no número de acertos e no tempo de resolução.
+## 🚀 Uso
+1. Execute o programa:
+    ```bash
+    ./simulador_provas
+    ```
+2. Siga as instruções no menu para iniciar uma prova, ver ranking, responder questões aleatórias ou acessar a ajuda.
 
-### Arquitetura Geral
+## 🏗 Arquitetura do Sistema
+O sistema segue uma arquitetura monolítica e é dividido em várias funções para modularizar o comportamento do sistema e promover a reutilização de código. As principais estruturas de dados são `Questao` e `Usuario`.
 
-O sistema é estruturado de forma modular, com componentes para interação com o usuário, manipulação de questões, cálculo de pontuação e geração de ranking.
+## 📊 Diagramas
 
-## Requisitos do Sistema
+### 🎨 Diagrama de Caso de Uso
+![image] (diagramas/Caso de uso.png)
 
-### Requisitos Funcionais
+### 🏷 Diagrama de Classes
+![image] (diagramas/Classes.png)
 
-- Iniciar uma nova prova.
-- Selecionar e apresentar questões aleatórias de diferentes temas.
-- Permitir ao usuário responder as questões e verificar a correção.
-- Armazenar o nome do usuário, pontuação e tempo de resolução para um ranking.
-- Exibir ranking ordenado por número de acertos e tempo de resolução.
-- Opções de ajuda e funcionalidades adicionais.
+### 🛠 Diagrama de Atividades
+![image] (diagramas/atividades.png)
 
-### Requisitos Não Funcionais
+### 📈 Diagrama de Estado
+![image] (diagramas/Estado.png)
 
-- O programa deve ser executado em um ambiente de terminal.
-- Deve suportar até 2 horas de duração máxima da prova.
-- Manipular corretamente arquivos de texto para banco de questões.
-- Deve ser intuitivo e fácil de usar.
-
-## Tecnologias Utilizadas
-
-- **Linguagem de Programação:** C
-- **Ambiente de Desenvolvimento:** GCC (GNU Compiler Collection), Visual Studio Code.
-- **Bibliotecas Utilizadas:** stdio.h, stdlib.h
-
-## Arquitetura do Software
-
-### Diagrama de Componentes
-
-![Diagrama de Componentes](link-para-imagem/diagrama-componentes.png)
-
-### Descrição dos Componentes
-
-- **UI (Interface com o Usuário):** Responsável por interagir com o usuário através do terminal.
-- **Gerenciador de Questões:** Manipula o banco de questões, selecionando aleatoriamente as questões para a prova.
-- **Controlador de Prova:** Gerencia o fluxo da prova, coletando respostas do usuário, calculando pontuação e tempo.
-- **Sistema de Ranking:** Armazena e ordena os resultados dos usuários.
-
-## Implementação
-
-### Organização do Código
-
-
-### Boas Práticas de Programação
-
-O código segue boas práticas de programação, incluindo:
-
-- Uso de nomes significativos para variáveis e funções.
-- Comentários explicativos para facilitar a compreensão do código.
-- Estrutura modular para facilitar a manutenção e extensão.
-
-### Principais Algoritmos e Estruturas de Dados
-
-- **Seleção Aleatória de Questões:** Utiliza funções de geração de números aleatórios para selecionar questões do banco de dados.
-- **Cálculo de Pontuação:** Calcula a pontuação com base nas respostas corretas e tempo de resolução.
-
-## Testes
-
-### Testes Unitários
-
-Foram desenvolvidos testes unitários para verificar a correta implementação das funcionalidades principais do sistema, como seleção de questões, cálculo de pontuação e ordenação do ranking.
-
-### Testes de Integração e Sistema
-
-Os módulos foram integrados e testados em conjunto para garantir o funcionamento correto do sistema como um todo, incluindo fluxos de usuário e manipulação de arquivos.
-
-## Manual do Usuário
-
-### Instalação
-
-1. Clone o repositório do projeto: `git clone https://github.com/seu-usuario/simulador-prova-concursos.git`
-2. Compile o código-fonte: `gcc -o simulador src/main.c src/ui.c src/questoes.c src/prova.c src/ranking.c src/util.c`
-
-### Guia de Uso
-
-1. **Menu Inicial:** Ao iniciar o programa, será apresentado um menu com opções para iniciar a prova, ver ranking e ajuda.
-2. **Iniciar Prova:** Opção para iniciar uma nova prova com questões aleatórias.
-3. **Responder Questões:** Digite 'C' ou 'F' para responder cada questão.
-4. **Ver Ranking:** Opção para visualizar o ranking dos usuários.
-
-### Solução de Problemas
-
-- **Ajuda:** Para mais informações e suporte, consulte a seção de ajuda no menu do programa.
-- **Suporte Técnico:** Entre em contato pelo email suporte@exemplo.com para assistência técnica.
-
-## Conclusão
-
-O simulador de prova para concursos em C oferece uma solução eficiente para simular provas de diferentes temas, com funcionalidades robustas e de fácil utilização. Para futuras extensões, considerar adicionar novos temas e funcionalidades avançadas.
-
----
-
-Esse é um esboço básico que você pode expandir conforme o desenvolvimento e os requisitos específicos do seu projeto. Certifique-se de incluir exemplos de código, imagens e outras informações relevantes conforme necessário.
+## 🤝 Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções de bugs ou novas funcionalidades.
 
 
